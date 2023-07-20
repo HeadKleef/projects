@@ -13,10 +13,13 @@ QUEST_4 = STRCAT
 
 
 strlen_tests:
-$(CC) $(CFLAGS) $(S21_STRLEN) $(STR_TEST) $(STRING) -o $(QUEST_1)
+	$(CC) $(CFLAGS) $(S21_STRLEN) $(STR_TEST) $(STRING) -o $(QUEST_1)
+
 strcmp_tests:
-$(CC) $(CFLAGS) $(S21_STRCMP) $(STR_TEST) $(STRING) -o $(QUEST_2)
+	$(CC) $(CFLAGS) $(S21_STRCMP) $(STR_TEST) $(STRING) -o $(QUEST_2)
+
 strcpy_tests:
-$(CC) $(CFLAGS) $(S21_STRCPY) $(STR_TEST) $(STRING) -o $(QUEST_3)
+	$(CC) $(CFLAGS) $(S21_STRCPY) $(STR_TEST) $(STRING) -o $(QUEST_3)
+
 strcat_tests:
-$(CC) $(CFLAGS) $(S21_STRCAT) $(STR_TEST) $(STRING) -o $(QUEST_4)
+	$(CC) $(CFLAGS) $(S21_STRCAT) $(STR_TEST) $(STRING) -o $(QUEST_4)

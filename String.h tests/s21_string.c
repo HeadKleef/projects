@@ -29,15 +29,27 @@ int s21_strcmp(const char *cmp, const char *comp_cmp)
     }
     return ret;
 }
-char *s21_strcpy(const char *data, char *clon_data)
-{
-    if (data != NULL)
-    {
-        for (int i = 0; (clon_data[i] = data[i]) != '\0'; i++)
-        {
-        }
+// char *s21_strcpy(const char *data, char *clon_data)
+// {
+//     if (data != NULL)
+//     {
+//         for (int i = 0; (clon_data[i] = data[i]) != '\0'; i++)
+//         {
+//         }
+//     }
+//     return clon_data;
+// }
+char *s21_strcpy( const char *source, char *destination) {
+    char *ptr = destination;
+
+    while (*source) {
+        *destination = *source;
+        destination++;
+        source++;
     }
-    return clon_data;
+
+    *destination = '\0';
+    return ptr;
 }
 char *s21_strcat(char *data, char *des_data)
 {
